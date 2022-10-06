@@ -1,19 +1,28 @@
-import React from "react";
-import { View, Text } from "react-native";
-import { styles } from "./styles";
-import { questions } from "../../constants/data";
+import React, { useEffect } from "react";
+import { FlatList } from "react-native";
+// import { styles } from "./styles";
+// import { questions } from "../../constants/data";
+import { useDispatch, useSelector } from "react-redux";
+import { QuestionItem } from "../../components";
 
-const Question = ({ navigation, route }) => {
+const Question = ({ navigation }) => {
+    const dispatch = useDispatch();
+    const selectedCategory = useSelector((state) => state.category.selected);
 
-    const { questionId } = route.params;
-    const question = questions.find(question => question.id === questionId);
+    const questionsFiltered = useSelector((state) => state.questions.filteredQuestion);
+
+    // useEffect(() => {
+    //     dispatch(filteredQuestion(selectedCategory.id))
+    // }, []);
+
+    const renderItem = ({ item }) => <QuestionItem item={item}/>
+
     return (
-        <View style={styles.container}>
-            <Image source={question.img} style={styles.image}/>
-            <Text>id: {question.question}</Text>
-            <Text>{question.correct}</Text>
-            <Text>{question.wrong}</Text>
-        </View>
+        <FlatList 
+            data={questionsFiltered}
+            renderItem={renderItem}
+            keyExtractor={item => item.id.toString()}
+        />
     )
 };
 
