@@ -6,15 +6,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectCategory } from "../../game/actions";
 
 const Categories = ({ navigation }) => {
+
     const dispatch = useDispatch();
     const categories = useSelector((state) => state.category.categories)
-    // const onSelected = (item) => {
-    //     navigation.navigate('Question', { name: item.title, categoryId: item.id });
-    // }
-    // const renderItem = ({ item }) => <CategoryItem item={item} onSelected={onSelected} />
+
     const onSelected = (item) => {
         dispatch(selectCategory(item.id))
-        navigation.navigate('Question', { name: item.title });
+        navigation.navigate('Question', { name: item.question });
     }
     const renderItem = ({ item }) => <CategoryItem item={item} onSelected={onSelected} />
     return (

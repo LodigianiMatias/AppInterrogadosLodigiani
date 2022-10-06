@@ -27,5 +27,5 @@ export const styles = StyleSheet.create({
         fontSize: 25,
         textShadowColor: colors.white, 
         textShadowOffset: {width: 1, height: 1}, textShadowRadius: 5,
-    }
+    },
 });

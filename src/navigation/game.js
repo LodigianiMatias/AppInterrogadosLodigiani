@@ -38,8 +38,8 @@ const GameNavigator = () => {
                 name="Question"
                 component={Question}
                 options={({ route }) => ({
-                    title: 'Pregunta',
-                    // title: route.params.name,
+                    headerShown: false,
+                    title: route.params.name,
                 })}
             />
         </Stack.Navigator>
