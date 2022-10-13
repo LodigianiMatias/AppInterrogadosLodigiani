@@ -12,7 +12,7 @@ export const questions = [
         id: 2,
         categoryId: 2,
         idQuestion: 1,
-        question: 'pregunta',
+        question: 'pregunta1',
         correct: 'si',
         wrong: 'no',
         img: '',
