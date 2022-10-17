@@ -56,5 +56,10 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         padding: 10,
         textAlign: 'center',
-    }
+    },
+    image:
+    {
+        width:250,
+        height:250,
+    },
 })

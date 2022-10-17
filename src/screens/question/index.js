@@ -17,6 +17,7 @@ const Question = ({ navigation }) => {
     }, []);
 
     const renderItem = ({ item }) => <QuestionItem item={item}/>
+
     return (
         <View style={styles.container}>
             <Text style={styles.title}>¡Pregunta!</Text>
