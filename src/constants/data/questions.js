@@ -6,7 +6,7 @@ export const questions = [
         question: '¿Como se llama ésta persona?',
         correct: 'Lionel Messi',
         wrong: 'Cristiano Ronaldo',
-        img: 'ooo',
+        img: '',
     },
     {
         id: 2,

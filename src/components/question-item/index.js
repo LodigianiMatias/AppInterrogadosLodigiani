@@ -1,5 +1,6 @@
+import { Text, TouchableOpacity, View } from "react-native";
+
 import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
 import { styles } from "./styles";
 
 const QuestionItem = ({ item }) => {
@@ -9,9 +10,11 @@ const QuestionItem = ({ item }) => {
                 <Text style={styles.title}>{item.question}</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.answersContainer}>
-                    <Text style={styles.correct}>◉{item.correct}</Text>
-                    <Text style={styles.wrong}>◉{item.wrong}</Text>
-                </TouchableOpacity>
+                <Text style={styles.correct}>◉{item.correct}</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+                <Text style={styles.wrong}>◉{item.wrong}</Text>
+            </TouchableOpacity>
         </View>
     )
 }
