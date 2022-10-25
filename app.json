@@ -24,10 +24,23 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.matiaslodigiani97.AppLodigiani"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fc3a6b8b-6c1a-49a1-ba69-04157fe64fd5"
+      }
+    },
+    "build": {
+      "preview": {
+        "android": {
+          "buildType": "apk"
+        }
+      }
     }
   }
 }
