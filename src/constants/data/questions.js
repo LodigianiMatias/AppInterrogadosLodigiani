@@ -540,7 +540,7 @@ export const questions = [
         id: 58,
         categoryId: 4,
         idQuestion: 13,
-        question: '¿Qué ocupa más superficie, el agua o los continentes?',
+        question: '¿Qué ocupa más superficie? ¿El agua o los continentes?',
         correct: 'El agua ocupa más superficie',
         wrong: 'Los continentes ocupan más superficie',
         img: '',
