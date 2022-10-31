@@ -151,7 +151,7 @@ export const questions = [
         question: '¿Cómo se llama este prócer?',
         correct: 'José de San Martín',
         wrong: 'Manuel Belgrano',
-        img: '',
+        img: 'https://i.ibb.co/R91fyDF/1-San-Martin.jpg',
     },
     {
         id: 17,
@@ -160,7 +160,7 @@ export const questions = [
         question: '¿Quien fundó las primeras escuelas públicas en Argentina?',
         correct: 'Domingo Faustino Sarmiento',
         wrong: 'Juan Manuel de Rosas',
-        img: '',
+        img: 'https://i.ibb.co/KXTnbQV/2-Sarmiento.webp',
     },
     {
         id: 18,
@@ -169,7 +169,7 @@ export const questions = [
         question: '¿En qué año fue la última reforma de la Constitución Nacional Argentina?',
         correct: '1994',
         wrong: '1984',
-        img: '',
+        img: 'https://i.ibb.co/Xpsf2r8/3-Constitucion.jpg',
     },
     {
         id: 19,
@@ -178,7 +178,7 @@ export const questions = [
         question: 'Los samuráis eran:',
         correct: 'Antiguos guerreros japoneses',
         wrong: 'Antiguos guerreros persas',
-        img: '',
+        img: 'https://i.ibb.co/nfKYhJH/4Samurai.jpg',
     },
     {
         id: 20,
@@ -187,7 +187,7 @@ export const questions = [
         question: '¿Dónde pintó Miguel Ángel la bóveda de la Capilla Sixtina?',
         correct: 'En el Vaticano',
         wrong: 'En Florencia',
-        img: '',
+        img: 'https://i.ibb.co/hfN0Wdt/5-Capilla-Sixtina.jpg',
     },
     {
         id: 21,
@@ -196,7 +196,7 @@ export const questions = [
         question: '¿Cómo se llama ésta obra arqueológica?',
         correct: 'Chichén Itzá',
         wrong: 'Pirámide del sol',
-        img: '',
+        img: 'https://i.ibb.co/Vv7Cwxb/6-Chichenitza.jpg',
     },
     {
         id: 22,
@@ -205,7 +205,7 @@ export const questions = [
         question: '¿Qué dia se festeja el Día de la Independecia Argentina?',
         correct: '9 de Julio',
         wrong: '20 de Junio',
-        img: '',
+        img: 'https://i.ibb.co/Bgrztfm/7-Independecia.jpg',
     },
     {
         id: 23,
@@ -214,7 +214,7 @@ export const questions = [
         question: '¿Qué se festeja el 25 de Mayo en Argentina?',
         correct: 'Día de la Revolución de Mayo',
         wrong: 'Día de la bandera',
-        img: '',
+        img: 'https://i.ibb.co/Vx32ggn/8-Revolucion-Mayo.jpg',
     },
     {
         id: 24,
@@ -223,7 +223,7 @@ export const questions = [
         question: '¿Cuándo cayeron las Torres Gemelas?',
         correct: '11 de Septiembre de 2001',
         wrong: '24 de Octubre de 2002',
-        img: '',
+        img: 'https://i.ibb.co/vv2Szm0/9-Torres-Gemelas.jpg',
     },
     {
         id: 25,
@@ -232,7 +232,7 @@ export const questions = [
         question: '¿Cuándo cayó el Muro de Berlín?',
         correct: '9 de Noviembre de 1989',
         wrong: '11 de Agosto de 1988',
-        img: '',
+        img: 'https://i.ibb.co/PY2TvJ1/10-Muro-Berlin.jpg',
     },
     {
         id: 26,
@@ -241,7 +241,7 @@ export const questions = [
         question: '¿Qué se celebra el 8 de Marzo?',
         correct: 'Dia de la Mujer',
         wrong: 'Día del trabajador',
-        img: '',
+        img: 'https://i.ibb.co/tHrhcNG/11-Dia-Mujer.jpg',
     },
     {
         id: 27,
@@ -250,7 +250,7 @@ export const questions = [
         question: '¿Cómo se llama este lugar?',
         correct: 'Coliseo Romano',
         wrong: 'Arco del triunfo',
-        img: '',
+        img: 'https://i.ibb.co/Tt1749D/12-Coliseo-Romano.jpg',
     },
     {
         id: 28,
@@ -259,7 +259,7 @@ export const questions = [
         question: '¿Qué pasó en Hiroshima en 1945?',
         correct: 'Estados Unidos lanzó una bomba atómica sobre ésta ciudad',
         wrong: 'Hubo un accidente nuclear',
-        img: '',
+        img: 'https://i.ibb.co/gt59rtv/13-Hiroshima.jpg',
     },
     {
         id: 29,
@@ -268,7 +268,7 @@ export const questions = [
         question: '¿En qué año se construyó la primer computadora que funcionase?',
         correct: '1941',
         wrong: '1930',
-        img: '',
+        img: 'https://i.ibb.co/pQFVMqC/14-Computadora.jpg',
     },
     {
         id: 30,
@@ -277,7 +277,7 @@ export const questions = [
         question: '¿Cuándo desembarcó Colón en América?',
         correct: '12 de Octubre de 1492',
         wrong: '20 de Noviembre de 1490',
-        img: '',
+        img: 'https://i.ibb.co/0YdKLZS/15Colon.jpg',
     },
 
 
@@ -293,7 +293,7 @@ export const questions = [
         question: '¿Cuánto vale el numero pi?',
         correct: '3,14',
         wrong: '5,2',
-        img: '',
+        img: 'https://i.ibb.co/zRhdk8F/1-Numero-Pi.jpg',
     },
     {
         id: 32,
@@ -302,7 +302,7 @@ export const questions = [
         question: 'Cual es la composición química del agua?',
         correct: 'Un átomo de oxígeno y dos de hidrógeno',
         wrong: 'Un átomo de hidrógeno y dos de oxígeno',
-        img: '',
+        img: 'https://i.ibb.co/fk5BTM8/2Agua.jpg',
     },
     {
         id: 33,
@@ -311,7 +311,7 @@ export const questions = [
         question: '¿Cuál es la velocidad de la luz?',
         correct: '300 000 km/s',
         wrong: '300 000 km/h',
-        img: '',
+        img: 'https://i.ibb.co/QQSps7J/3-Velocidad-Luz.jpg',
     },
     {
         id: 34,
@@ -320,7 +320,7 @@ export const questions = [
         question: '¿Cuál es la velocidad del sonido?',
         correct: '1235.5 km/h',
         wrong: '800 km/h',
-        img: '',
+        img: 'https://i.ibb.co/vwptnMB/4-Velocidad-Sonido.jpg',
     },
     {
         id: 35,
@@ -329,7 +329,7 @@ export const questions = [
         question: '¿A quién se le atribuye la frase "Solo sé que no sé nada"?',
         correct: 'Sócrates',
         wrong: 'Salomón',
-        img: '',
+        img: 'https://i.ibb.co/cwcH8JS/5-Socrates.jpg',
     },
     {
         id: 36,
@@ -338,7 +338,7 @@ export const questions = [
         question: '¿Cuál es la montaña más alta del continente americano?',
         correct: 'Aconcagua',
         wrong: 'Monte Everest',
-        img: '',
+        img: 'https://i.ibb.co/PM1480Z/6-Aconcagua.jpg',
     },
     {
         id: 37,
@@ -347,7 +347,7 @@ export const questions = [
         question: '¿Cómo es el nombre científico del coronavirus?',
         correct: 'COVID-19',
         wrong: 'COVID-12',
-        img: '',
+        img: 'https://i.ibb.co/2KKLtcq/7Covid.jpg',
     },
     {
         id: 38,
@@ -356,7 +356,7 @@ export const questions = [
         question: '¿Cuál es el orden de los planetas del sistema solar?',
         correct: 'Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano, Neptuno',
         wrong: 'Venus, Mercurio, Tierra, Júpiter, Urano, Saturno, Neptuno',
-        img: '',
+        img: 'https://i.ibb.co/jHr1x2h/8-Sistema-Solar.jpg',
     },
     {
         id: 39,
@@ -365,7 +365,7 @@ export const questions = [
         question: '¿Cuál es el planeta más grande del sistema solar?',
         correct: 'Júpiter',
         wrong: 'Venus',
-        img: '',
+        img: 'https://i.ibb.co/hXJBZ8m/9Pluton.jpg',
     },
     {
         id: 40,
@@ -374,7 +374,7 @@ export const questions = [
         question: '¿Cuál es el animal terrestre más grande en la actualidad?',
         correct: 'Elefante africano',
         wrong: 'Jirafa',
-        img: '',
+        img: 'https://i.ibb.co/Z8n8GGk/10-Elefante-Africano.jpg',
     },
     {
         id: 41,
@@ -383,7 +383,7 @@ export const questions = [
         question: '¿Cuáles son los nombres de los tres reyes magos?',
         correct: 'Gaspar, Melchor y Baltazar',
         wrong: 'Gaspar, Nicolas y Nataniel',
-        img: '',
+        img: 'https://i.ibb.co/fxbqG1J/11-Reyes-Magos.webp',
     },
     {
         id: 42,
@@ -392,7 +392,7 @@ export const questions = [
         question: '¿Quién fue el primer hombre en pisar la Luna?',
         correct: 'Neil Armstrong',
         wrong: 'Buzz Aldrin',
-        img: '',
+        img: 'https://i.ibb.co/9h1VkVS/12Neil.jpg',
     },
     {
         id: 43,
@@ -401,7 +401,7 @@ export const questions = [
         question: '¿Quién descubrió la vacuna contra la rabia y el proceso de pasteurización?',
         correct: 'Louis Pasteur',
         wrong: 'Antoine Lavoisier',
-        img: '',
+        img: 'https://i.ibb.co/xSkT4dj/13-Pasteur.webp',
     },
     {
         id: 44,
@@ -410,7 +410,7 @@ export const questions = [
         question: '¿Cómo se llaman los vasos que transportan la sangre desde el corazón al resto del cuerpo?',
         correct: 'Arterias',
         wrong: 'Articulaciones',
-        img: '',
+        img: 'https://i.ibb.co/VjqjPPn/14-Arterias.jpg',
     },
     {
         id: 45,
@@ -419,7 +419,7 @@ export const questions = [
         question: '¿Qué sustancia es absorbida por las plantas y expirada por los animales?',
         correct: 'Dióxido de carbono',
         wrong: 'Oxígeno',
-        img: '',
+        img: 'https://i.ibb.co/hDn6TQh/15-Plantas.jpg',
     },
 
 
@@ -434,8 +434,8 @@ export const questions = [
         idQuestion: 1,
         question: '¿Cuál es la capital de Argentina?',
         correct: 'Buenos Aires',
-        wrong: 'Córdoba',
-        img: '',
+        wrong: 'La Plata',
+        img: 'https://i.ibb.co/X8qSnDk/1-Argentina.jpg',
     },
     {
         id: 47,
@@ -444,7 +444,7 @@ export const questions = [
         question: '¿Cuál es la capital de España?',
         correct: 'Madrid',
         wrong: 'Barcelona',
-        img: '',
+        img: 'https://i.ibb.co/w7gdF8q/2Espa-a.webp',
     },
     {
         id: 48,
@@ -453,7 +453,7 @@ export const questions = [
         question: '¿Cuál es la capital de Rusia?',
         correct: 'Moscú',
         wrong: 'Kazán',
-        img: '',
+        img: 'https://i.ibb.co/djv246Q/3Rusia.jpg',
     },
     {
         id: 49,
@@ -462,7 +462,7 @@ export const questions = [
         question: '¿Cuál es la montaña más alta del mundo?',
         correct: 'Monte Everest',
         wrong: 'Manaslu',
-        img: '',
+        img: 'https://i.ibb.co/P1Lpzb4/4-Monte-Everest10.jpg',
     },
     {
         id: 50,
@@ -471,7 +471,7 @@ export const questions = [
         question: '¿Cuántos océanos existen en la Tierra?',
         correct: '5 océanos',
         wrong: '7 océanos',
-        img: '',
+        img: 'https://i.ibb.co/ChgjjTH/5Oceanos.jpg',
     },
     {
         id: 51,
@@ -480,7 +480,7 @@ export const questions = [
         question: '¿Cuál es la ciudad más poblada del mundo?',
         correct: 'Tokio, capital de Japón',
         wrong: 'Madrid, capital de España',
-        img: '',
+        img: 'https://i.ibb.co/5nDj1r8/6-Ciudad-Poblada.jpg',
     },
     {
         id: 52,
@@ -489,7 +489,7 @@ export const questions = [
         question: '¿El desierto más grande del mundo?',
         correct: 'Desierto de Sahara',
         wrong: 'Desierto de Sonora',
-        img: '',
+        img: 'https://i.ibb.co/jzpq981/7-Desierto.jpg',
     },
     {
         id: 53,
@@ -498,7 +498,7 @@ export const questions = [
         question: '¿Qué país es el más grande del mundo?',
         correct: 'Rusia',
         wrong: 'China',
-        img: '',
+        img: 'https://i.ibb.co/XZTR1bT/8Mapa.jpg',
     },
     {
         id: 54,
@@ -507,7 +507,7 @@ export const questions = [
         question: '¿A qué país corresponde la siguiente imagen?',
         correct: 'Emiratos Arabes Unidos',
         wrong: 'Tailandia',
-        img: '',
+        img: 'https://i.ibb.co/K6SLB9w/9-Emiratos.jpg',
     },
     {
         id: 55,
@@ -516,7 +516,7 @@ export const questions = [
         question: '¿En qué continente se encuentra el Monte Everest?',
         correct: 'Asia',
         wrong: 'África',
-        img: '',
+        img: 'https://i.ibb.co/P1Lpzb4/4-Monte-Everest10.jpg',
     },
     {
         id: 56,
@@ -525,7 +525,7 @@ export const questions = [
         question: '¿Cómo se llama este río que pasa por París?',
         correct: 'Río Sena',
         wrong: 'Río Támesis',
-        img: '',
+        img: 'https://i.ibb.co/JR8NdX1/11-Rio-Sena.jpg',
     },
     {
         id: 57,
@@ -534,7 +534,7 @@ export const questions = [
         question: '¿Qué es Greenwich?',
         correct: 'Un meridiano',
         wrong: 'Un paralelo',
-        img: '',
+        img: 'https://i.ibb.co/bg6wVL7/12-Meridiano.jpg',
     },
     {
         id: 58,
@@ -543,7 +543,7 @@ export const questions = [
         question: '¿Qué ocupa más superficie? ¿El agua o los continentes?',
         correct: 'El agua ocupa más superficie',
         wrong: 'Los continentes ocupan más superficie',
-        img: '',
+        img: 'https://i.ibb.co/Km62XxQ/13-Superficie.jpg',
     },
     {
         id: 59,
@@ -552,7 +552,7 @@ export const questions = [
         question: '¿Cuántos continentes existen?',
         correct: 'Cinco continentes',
         wrong: 'Seis continentes',
-        img: '',
+        img: 'https://i.ibb.co/F6rfcwr/14-Continentes.jpg',
     },
     {
         id: 60,
@@ -561,7 +561,7 @@ export const questions = [
         question: '¿Cuál es el país con la mayor cantidad de habitantes en el mundo?',
         correct: 'China',
         wrong: 'India',
-        img: '',
+        img: 'https://i.ibb.co/4tHF4p2/15-Poblaci-n.jpg',
     },
 
 ]
