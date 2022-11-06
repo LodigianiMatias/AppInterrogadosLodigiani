@@ -1,4 +1,4 @@
-import { Button, FlatList, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { Button, ScrollView, Text, TouchableOpacity, View } from "react-native";
 
 import React from "react";
 import { colors } from "../../constants/themes";
@@ -16,6 +16,12 @@ const MainMenu = ({navigation}) => {
             title="Comenzar el juego!"
             style={styles.button}
             onPress={() => navigation.navigate("Categories")}
+            >Comenzar Juego</Button>
+            <Button
+            color={colors.white}
+            title="Comenzar"
+            style={styles.button}
+            onPress={() => navigation.navigate("NextQuestion")}
             >Comenzar Juego</Button>
         </View>
         </ScrollView>

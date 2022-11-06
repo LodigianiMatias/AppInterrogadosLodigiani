@@ -1,7 +1,8 @@
+import { Categories, EndGame, MainMenu, NextQuestion, Question, TryAgain } from "../screens";
+
 import React from "react";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Categories, MainMenu, Question } from "../screens";
 import { colors } from "../constants/themes";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const Stack = createNativeStackNavigator();
 
@@ -40,6 +41,27 @@ const GameNavigator = () => {
                 options={({ route }) => ({
                     headerShown: false,
                     title: route.params.name,
+                })}
+            />
+            <Stack.Screen
+                name="EndGame"
+                component={EndGame}
+                options={({ route }) => ({
+                    headerShown: false,
+                })}
+            />
+            <Stack.Screen
+                name="TryAgain"
+                component={TryAgain}
+                options={({ route }) => ({
+                    headerShown: false,
+                })}
+            />
+            <Stack.Screen
+                name="NextQuestion"
+                component={NextQuestion}
+                options={({ route }) => ({
+                    headerShown: false,
                 })}
             />
         </Stack.Navigator>
