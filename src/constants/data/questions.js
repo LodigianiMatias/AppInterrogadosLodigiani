@@ -33,7 +33,7 @@ export const questions = [
         id: 4,
         categoryId: 3,
         idQuestion: 4,
-        question: '¿Cuántos cuartos tiene un partido de básquet?',
+        question: '¿Cuántos tiempos tiene un partido de básquet?',
         correct: '4 tiempos',
         wrong: '2 tiempos',
         img: 'https://i.ibb.co/rd6pbbt/4Basquet.jpg',
@@ -435,7 +435,7 @@ export const questions = [
         question: '¿Cuál es la capital de Argentina?',
         correct: 'Buenos Aires',
         wrong: 'La Plata',
-        img: 'https://i.ibb.co/X8qSnDk/1-Argentina.jpg',
+        img: 'https://i.ibb.co/vdrm52H/1-Argentina.jpg',
     },
     {
         id: 47,
@@ -444,7 +444,7 @@ export const questions = [
         question: '¿Cuál es la capital de España?',
         correct: 'Madrid',
         wrong: 'Barcelona',
-        img: 'https://i.ibb.co/w7gdF8q/2Espa-a.webp',
+        img: 'https://i.ibb.co/nfVxR9Y/2Espa-a.webp',
     },
     {
         id: 48,
@@ -453,7 +453,7 @@ export const questions = [
         question: '¿Cuál es la capital de Rusia?',
         correct: 'Moscú',
         wrong: 'Kazán',
-        img: 'https://i.ibb.co/djv246Q/3Rusia.jpg',
+        img: 'https://i.ibb.co/Ky6qMfz/3Rusia.jpg',
     },
     {
         id: 49,
@@ -462,7 +462,7 @@ export const questions = [
         question: '¿Cuál es la montaña más alta del mundo?',
         correct: 'Monte Everest',
         wrong: 'Manaslu',
-        img: 'https://i.ibb.co/P1Lpzb4/4-Monte-Everest10.jpg',
+        img: 'https://i.ibb.co/dmCyps8/4-Monte-Everest10.jpg',
     },
     {
         id: 50,
@@ -471,7 +471,7 @@ export const questions = [
         question: '¿Cuántos océanos existen en la Tierra?',
         correct: '5 océanos',
         wrong: '7 océanos',
-        img: 'https://i.ibb.co/ChgjjTH/5Oceanos.jpg',
+        img: 'https://i.ibb.co/98ygm3g/5Oceanos.jpg',
     },
     {
         id: 51,
@@ -480,7 +480,7 @@ export const questions = [
         question: '¿Cuál es la ciudad más poblada del mundo?',
         correct: 'Tokio, capital de Japón',
         wrong: 'Madrid, capital de España',
-        img: 'https://i.ibb.co/5nDj1r8/6-Ciudad-Poblada.jpg',
+        img: 'https://i.ibb.co/rkrtkFf/6-Ciudad-Poblada.jpg',
     },
     {
         id: 52,
@@ -489,7 +489,7 @@ export const questions = [
         question: '¿El desierto más grande del mundo?',
         correct: 'Desierto de Sahara',
         wrong: 'Desierto de Sonora',
-        img: 'https://i.ibb.co/jzpq981/7-Desierto.jpg',
+        img: 'https://i.ibb.co/mt0QhHb/7-Desierto.jpg',
     },
     {
         id: 53,
@@ -498,7 +498,7 @@ export const questions = [
         question: '¿Qué país es el más grande del mundo?',
         correct: 'Rusia',
         wrong: 'China',
-        img: 'https://i.ibb.co/XZTR1bT/8Mapa.jpg',
+        img: 'https://i.ibb.co/dJzs6CY/8Mapa.jpg',
     },
     {
         id: 54,
@@ -507,7 +507,7 @@ export const questions = [
         question: '¿A qué país corresponde la siguiente imagen?',
         correct: 'Emiratos Arabes Unidos',
         wrong: 'Tailandia',
-        img: 'https://i.ibb.co/K6SLB9w/9-Emiratos.jpg',
+        img: 'https://i.ibb.co/0fZwv8w/9-Emiratos.jpg',
     },
     {
         id: 55,
@@ -516,7 +516,7 @@ export const questions = [
         question: '¿En qué continente se encuentra el Monte Everest?',
         correct: 'Asia',
         wrong: 'África',
-        img: 'https://i.ibb.co/P1Lpzb4/4-Monte-Everest10.jpg',
+        img: 'https://i.ibb.co/dmCyps8/4-Monte-Everest10.jpg',
     },
     {
         id: 56,
@@ -525,7 +525,7 @@ export const questions = [
         question: '¿Cómo se llama este río que pasa por París?',
         correct: 'Río Sena',
         wrong: 'Río Támesis',
-        img: 'https://i.ibb.co/JR8NdX1/11-Rio-Sena.jpg',
+        img: 'https://i.ibb.co/MZvjwVz/11-Rio-Sena.jpg',
     },
     {
         id: 57,
@@ -534,7 +534,7 @@ export const questions = [
         question: '¿Qué es Greenwich?',
         correct: 'Un meridiano',
         wrong: 'Un paralelo',
-        img: 'https://i.ibb.co/bg6wVL7/12-Meridiano.jpg',
+        img: 'https://i.ibb.co/Rbdrnqg/12-Meridiano.jpg',
     },
     {
         id: 58,
@@ -543,7 +543,7 @@ export const questions = [
         question: '¿Qué ocupa más superficie? ¿El agua o los continentes?',
         correct: 'El agua ocupa más superficie',
         wrong: 'Los continentes ocupan más superficie',
-        img: 'https://i.ibb.co/Km62XxQ/13-Superficie.jpg',
+        img: 'https://i.ibb.co/DzZc42g/13-Superficie.jpg',
     },
     {
         id: 59,
@@ -552,7 +552,7 @@ export const questions = [
         question: '¿Cuántos continentes existen?',
         correct: 'Cinco continentes',
         wrong: 'Seis continentes',
-        img: 'https://i.ibb.co/F6rfcwr/14-Continentes.jpg',
+        img: 'https://i.ibb.co/PD0tHmS/14-Continentes.jpg',
     },
     {
         id: 60,
@@ -561,7 +561,7 @@ export const questions = [
         question: '¿Cuál es el país con la mayor cantidad de habitantes en el mundo?',
         correct: 'China',
         wrong: 'India',
-        img: 'https://i.ibb.co/4tHF4p2/15-Poblaci-n.jpg',
+        img: 'https://i.ibb.co/mGFj9dH/15-Poblaci-n.jpg',
     },
 
 ]
