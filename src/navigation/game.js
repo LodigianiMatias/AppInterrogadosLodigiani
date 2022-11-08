@@ -46,21 +46,21 @@ const GameNavigator = () => {
             <Stack.Screen
                 name="EndGame"
                 component={EndGame}
-                options={({ route }) => ({
+                options={() => ({
                     headerShown: false,
                 })}
             />
             <Stack.Screen
                 name="TryAgain"
                 component={TryAgain}
-                options={({ route }) => ({
+                options={() => ({
                     headerShown: false,
                 })}
             />
             <Stack.Screen
                 name="NextQuestion"
                 component={NextQuestion}
-                options={({ route }) => ({
+                options={() => ({
                     headerShown: false,
                 })}
             />

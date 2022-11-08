@@ -13,5 +13,6 @@ export const styles = StyleSheet.create({
         fontSize: 24,
         textShadowColor: colors.white, 
         textShadowOffset: {width: 2, height: 2}, textShadowRadius: 3,
+        textAlign: 'center',
     }
 })

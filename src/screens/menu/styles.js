@@ -33,5 +33,25 @@ export const styles = StyleSheet.create({
         shadowRadius: 5,
         elevation: 4,
         padding: 10,
-    }
+    },
+    buttonContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 5,
+        marginTop: 10,
+        marginBottom: 10,
+        backgroundColor: colors.text,
+        borderRadius: 10,
+    },
+    buttonText: {
+        fontFamily: 'Lato-Bold',
+        fontSize: 24,      
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 10,
+        textAlign: 'center',
+        paddingHorizontal: 20,
+    },
 })
