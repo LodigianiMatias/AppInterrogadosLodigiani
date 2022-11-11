@@ -1,9 +1,9 @@
-import React from "react";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Ionicons } from "@expo/vector-icons"
 import CreditsNavigator from "./credits";
 import GameNavigator from "./game";
+import { Ionicons } from "@expo/vector-icons"
+import React from "react";
 import { colors } from "../constants/themes";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 const BottomTab = createBottomTabNavigator();
 

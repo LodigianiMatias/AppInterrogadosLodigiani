@@ -1,11 +1,11 @@
-import { FlatList, Text, View } from "react-native";
+import { FlatList, ScrollView, Text, View } from "react-native";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { QuestionItem } from "../../components";
 import { filteredQuestions } from "../../game/actions";
 import { generateRandomNumberBetween } from "../../utils/functions";
-import { styles } from "../categories/styles";
+import { styles } from "./styles";
 
 const Question = ({ navigation }) => {
     const dispatch = useDispatch();
@@ -16,23 +16,22 @@ const Question = ({ navigation }) => {
 
     const questionsFiltered = useSelector((state) => state.questions.filteredQuestions);
 
-    const questionFiltered = questionsFiltered.filter(q => q.idQuestion == idRound )
+    const questionFiltered = questionsFiltered.filter(q => q.idQuestion == idRound)
 
     useEffect(() => {
         dispatch(filteredQuestions(selectedCategory.id))
     }, []);
 
-    const renderItem = ({ item }) => <QuestionItem item={item}/>
+    const renderItem = ({ item }) => <QuestionItem item={item} navigation={navigation} />
 
     return (
         <View style={styles.container}>
             <Text style={styles.title}>¡Pregunta!</Text>
-            <FlatList 
-            style={styles.flatlist}
-            data={questionFiltered}
-            renderItem={renderItem}
-            keyExtractor={item => item.id.toString()}
-        />
+            <FlatList
+                data={questionFiltered}
+                renderItem={renderItem}
+                keyExtractor={item => item.id.toString()}
+            />
         </View>
     )
 };

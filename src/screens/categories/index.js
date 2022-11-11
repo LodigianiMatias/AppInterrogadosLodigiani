@@ -1,14 +1,23 @@
-import React from "react";
 import { FlatList, Text, View } from "react-native";
-import { CategoryItem } from "../../components";
-import { styles } from "./styles";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+
+import { CategoryItem } from "../../components";
 import { selectCategory } from "../../game/actions";
+import { styles } from "./styles";
 
 const Categories = ({ navigation }) => {
 
     const dispatch = useDispatch();
     const categories = useSelector((state) => state.category.categories)
+
+    useEffect(() => {
+        navigation.getParent().setOptions({ tabBarStyle: { display: 'none' } });
+        return () => {
+            navigation.getParent().setOptions({ tabBarStyle: { display: 'flex' } });
+        }
+    }, []);
+
 
     const onSelected = (item) => {
         dispatch(selectCategory(item.id))
@@ -18,11 +27,11 @@ const Categories = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>¡Elija su categoria!</Text>
-            { <FlatList
+            {<FlatList
                 data={categories}
                 renderItem={renderItem}
                 keyExtractor={item => item.id.toString()}
-            /> }
+            />}
         </View>
     )
 };

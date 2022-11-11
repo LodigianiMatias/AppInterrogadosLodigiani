@@ -1,9 +1,11 @@
+import React, { useEffect } from "react";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 
-import React from "react";
+import { colors } from "../../constants/themes";
 import {styles} from "./styles";
 
 const MainMenu = ({navigation}) => {
+
     return (
         <ScrollView style={styles.scroll}>
             <View style={styles.container}>

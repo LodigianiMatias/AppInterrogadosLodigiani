@@ -24,7 +24,7 @@ const GameNavigator = () => {
                 name="MainMenu"
                 component={MainMenu}
                 options={{
-                    title: 'Menú',
+                    headerShown: false,
                 }}
             />
             <Stack.Screen
