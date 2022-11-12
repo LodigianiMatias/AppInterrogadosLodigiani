@@ -30,7 +30,7 @@ const EndGame = ({navigation}) => {
             <View style={styles.titleContainer}>
             <Text style={styles.title}>Felicidades ¡Has ganado!</Text>
             </View>
-            <Text>Tu nombre?</Text>
+            <Text>¿Tu nombre?</Text>
             <TextInput
               style={styles.input}
               placerholder="Tu nombre"
