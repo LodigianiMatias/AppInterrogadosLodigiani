@@ -10,6 +10,7 @@ const Categories = ({ navigation }) => {
 
     const dispatch = useDispatch();
     const categories = useSelector((state) => state.category.categories)
+    const contador = useSelector((state) => state.number.numero)
 
     useEffect(() => {
         navigation.getParent().setOptions({ tabBarStyle: { display: 'none' } });
@@ -27,6 +28,7 @@ const Categories = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>¡Elija su categoria!</Text>
+            <Text> Contador de respuestas correctas: {contador}</Text>
             {<FlatList
                 data={categories}
                 renderItem={renderItem}

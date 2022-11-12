@@ -1,14 +1,19 @@
 import { Alert, Button, Image, Text, TouchableOpacity, View } from "react-native";
 
+import { Incrementar } from "../../game/actions";
 import React from "react";
 import { generateRandomNumberBetween } from "../../utils/functions";
 import { styles } from "./styles";
+import { useDispatch } from "react-redux";
 
 const QuestionItem = ({ item, navigation }) => {
+    const dispatch = useDispatch();
+
 
     const inOrderQuestion = generateRandomNumberBetween(1, 3);
 
     const onCorrect = () => {
+        dispatch(Incrementar())
         navigation.navigate("NextQuestion");
     };
 
