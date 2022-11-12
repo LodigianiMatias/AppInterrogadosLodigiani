@@ -1,7 +1,9 @@
 import { Button, ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
 
 import { ImageSelector } from "../../components";
+import { Perder } from "../../game/actions";
 import React from "react";
+import { saveRecord } from "../../game/record.slice";
 import { styles } from "./styles"
 import { useDispatch } from "react-redux";
 import { useState } from "react";
@@ -15,10 +17,11 @@ const EndGame = ({navigation}) => {
         setName(text);
     }
 
-    // const onHandleSubmit = () => {
-    //     dispatch(saveRecord(name , image));
-    //     navigation.navigate("MainMenu")
-    // };
+    const onHandleSubmit = () => {
+        dispatch(Perder())
+        dispatch(saveRecord(name , image));
+        navigation.navigate("MainMenu")
+    };
 
     const onHandlerImage = (imageUri) => {
         setImage(imageUri);
@@ -38,7 +41,7 @@ const EndGame = ({navigation}) => {
               value={name}
             />
             <ImageSelector onImage={onHandlerImage}/>
-            <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate("MainMenu")}>
+            <TouchableOpacity style={styles.buttonContainer} onPress={onHandleSubmit}>
                 <Text style={styles.buttonText}>Guardar y volver al menú</Text>
             </TouchableOpacity>
         </View>

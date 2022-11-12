@@ -1,6 +1,6 @@
 import { GameRecord } from "../types";
 
-const { INCREMENT } = GameRecord
+const { INCREMENT, LOST } = GameRecord
 const initialState = {
     numero: 0,
 }
@@ -8,9 +8,16 @@ const initialState = {
 const numberReducer = (state = initialState, action) => {
     switch(action.type) {
         case INCREMENT:
-            return state.numero +1 ;
-            default:
-                return state;
+            return {
+                numero: state.numero +1,
+            }
+
+        case LOST:
+            return {
+                numero: 0,
+            }
+        default:
+            return state;
     }
 };
 

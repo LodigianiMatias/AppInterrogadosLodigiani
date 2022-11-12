@@ -21,7 +21,7 @@ export const insertRecord = (title, image) => {
     const promise = new Promise((resolve, reject) => {
         db.transaction((tx) => {
             tx.executeSql(
-                'INSERT INTO records (title, image) VALUES (?,?);',
+                'INSERT INTO records (id, title, image) VALUES (? , ? ,?);',
                 [title,image],
                 (_, result) => resolve(result),
                 (_, err) => reject(err)

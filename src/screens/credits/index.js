@@ -1,22 +1,16 @@
 import { Text, View } from "react-native";
 
-import { LocationSelector } from "../../components";
 import React from "react";
 import { styles } from "./styles";
 import { useState } from "react";
 
-const Credits = ({navigation}) => {
-
-    const [location, setLocation] = useState("")
-    const onHandlerLocation = (location) => {
-        setLocation(location);
-    }
-
+const Credits = () => {
     
     return (
-        <View style={styles.container}>
-            <Text style={styles.title}>¡Gracias por jugar mi juego!</Text>
-            <LocationSelector onLocation={onHandlerLocation}/>
+        <View style={styles.content}>
+            <View style={styles.textContainer}>
+                <Text style={styles.title}>Lista de ganadores</Text>
+            </View>
         </View>
     )
 }

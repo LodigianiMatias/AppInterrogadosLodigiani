@@ -1,5 +1,6 @@
 import Record from "../model/Record"
 import { createSlice } from "@reduxjs/toolkit";
+import {insertRecord} from '../db/index';
 
 const initialState = {
     records: [],
@@ -12,7 +13,7 @@ const recordSlice = createSlice ({
         addRecord: (state, action) => {
             const newRecord = new Record(
                 action.payload.id,
-                action.payload.name,
+                action.payload.title,
                 action.payload.image,
               );
               state.records.push(newRecord);
@@ -24,5 +25,17 @@ const recordSlice = createSlice ({
 });
 
 export const {addRecord, setRecords} = recordSlice.actions;
+
+export const saveRecord = (title, image) => {
+    return async (dispatch) => {
+      try {
+        const result = insertRecord(title, image)
+        dispatch(addRecord({ id: result.insertId, title, image}))
+      } catch (err) {
+        console.log(err);
+        throw err;
+      }
+    };
+  };
 
 export default recordSlice.reducer;

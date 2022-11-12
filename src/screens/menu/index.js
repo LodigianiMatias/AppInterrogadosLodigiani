@@ -10,7 +10,7 @@ const MainMenu = ({navigation}) => {
         <ScrollView style={styles.scroll}>
             <View style={styles.container}>
             <Text style={styles.title}>Interrogados</Text>
-            <Text style={styles.text}>El juego consiste en responder preguntas al estilo de la clásica trivia, obtendrás la victoria si logras 3 respuestas correctas. Si respondes incorrectamente se reiniciará la partida. ¡Buena suerte!</Text>
+            <Text style={styles.text}>El juego consiste en responder preguntas al estilo de la clásica trivia, obtendrás la victoria si logras 5 respuestas correctas. Si respondes incorrectamente se reiniciará la partida. ¡Buena suerte!</Text>
             <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate("Categories")}>
                 <Text style={styles.buttonText}>¡Comenzar a jugar!</Text>
             </TouchableOpacity>

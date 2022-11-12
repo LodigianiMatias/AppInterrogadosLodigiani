@@ -19,16 +19,18 @@ const Categories = ({ navigation }) => {
         }
     }, []);
 
-
     const onSelected = (item) => {
         dispatch(selectCategory(item.id))
         navigation.navigate('Question', { name: item.question });
     }
+
     const renderItem = ({ item }) => <CategoryItem item={item} onSelected={onSelected} />
+
+    
     return (
         <View style={styles.container}>
             <Text style={styles.title}>¡Elija su categoria!</Text>
-            <Text> Contador de respuestas correctas: {contador}</Text>
+            <Text> Respuestas correctas: {contador}</Text>
             {<FlatList
                 data={categories}
                 renderItem={renderItem}

@@ -1,7 +1,7 @@
 class Record {
-    constructor(id, name, image) {
+    constructor(id, title, image) {
         this.id = id.toString();
-        this.name = name;
+        this.title = title;
         this.image = image;
     }
 }

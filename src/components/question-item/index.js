@@ -1,23 +1,27 @@
 import { Alert, Button, Image, Text, TouchableOpacity, View } from "react-native";
+import { Incrementar, Perder } from "../../game/actions";
+import { useDispatch, useSelector } from "react-redux";
 
-import { Incrementar } from "../../game/actions";
 import React from "react";
 import { generateRandomNumberBetween } from "../../utils/functions";
 import { styles } from "./styles";
-import { useDispatch } from "react-redux";
 
 const QuestionItem = ({ item, navigation }) => {
     const dispatch = useDispatch();
-
+    const contador = useSelector((state) => state.number.numero)
 
     const inOrderQuestion = generateRandomNumberBetween(1, 3);
 
     const onCorrect = () => {
         dispatch(Incrementar())
-        navigation.navigate("NextQuestion");
+        if (contador == 4) {
+            navigation.navigate("EndGame")
+        } else {
+        navigation.navigate("NextQuestion");}
     };
 
     const onIncorrect = () => {
+        dispatch(Perder())
         navigation.navigate("TryAgain")
     }
 

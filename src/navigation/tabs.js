@@ -40,10 +40,10 @@ const Tabs = () => {
                 }}
             />
             <BottomTab.Screen
-                name="CreditsTab"
+                name="HallofFameTab"
                 component={CreditsNavigator}
                 options= {{
-                    title: 'Créditos',
+                    title: 'Hall of fame',
                     tabBarIcon: ({focused}) => (
                         <Ionicons
                             name={focused ? 'file-tray-full' : 'file-tray-full-outline'}
