@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
     title: {
         textAlign: 'center',
         fontSize: 40,
-        marginBottom: 100,
+        marginBottom: 50,
         fontFamily: 'Bungee',
         color: colors.text,
         textShadowColor: 'shadowText',
@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 22,
         marginHorizontal: 30,
-        marginBottom: 50,
+        marginBottom: 30,
     },
     buttonContainer: {
         flex: 0.2,
@@ -40,5 +40,12 @@ export const styles = StyleSheet.create({
         padding: 10,
         textAlign: 'center',
         paddingHorizontal: 20,
+    },
+    imageContainer: {
+        alignItems: 'center',
+    },
+    img: {
+        width: 250,
+        height: 250,
     }
 })

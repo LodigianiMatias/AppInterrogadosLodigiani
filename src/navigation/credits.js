@@ -1,7 +1,7 @@
-import React from "react";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Credits } from "../screens";
+import React from "react";
 import { colors } from "../constants/themes";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const Stack = createNativeStackNavigator();
 

@@ -41,6 +41,11 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 20,
         
     },
+    preview: {
+        flex: 1,
+        marginHorizontal: 30,
+        minWidth: 200,
+    },
     wrong: {
         fontFamily: 'Lato-Bold',
         fontSize: 24,
