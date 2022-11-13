@@ -2,8 +2,13 @@ import { StyleSheet } from "react-native";
 import { colors } from "../../constants/themes";
 
 export const styles = StyleSheet.create({
+  fullContainer: {
+    flex: 1,
+    marginHorizontal: 30,
+    marginTop: 30,
+  },
   container: {
-    borderBottomColor: colors.primary,
+    borderBottomColor: colors.text,
     borderBottomWidth: 1,
     padding: 15,
     flexDirection: "row",
@@ -21,9 +26,5 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "flex-start",
   },
-  title: {
-    fontSize: 15,
-    color: colors.text,
-    marginBottom: 10,
-  },
+  
 });

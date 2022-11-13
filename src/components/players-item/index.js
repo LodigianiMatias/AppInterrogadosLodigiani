@@ -5,12 +5,14 @@ import { styles } from "./styles";
 
 const PlayersItem = ({ title, image }) => {
   return (
-    <TouchableOpacity onPress={onSelect} style={styles.container}>
+    <View style={styles.fullContainer}>
+      <View style={styles.container}>
       <Image style={styles.image} source={{ uri: image }} />
       <View style={styles.info}>
-        <Text style={styles.title}>{title}</Text>
+        <Text style={styles.infoTitle}>{title}</Text>
       </View>
-    </TouchableOpacity>
+      </View>
+    </View>
   );
 };
 

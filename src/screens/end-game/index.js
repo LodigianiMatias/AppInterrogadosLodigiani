@@ -1,31 +1,30 @@
 import { Button, ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
+import { Perder, saveRecord } from "../../game/actions";
 
 import { ImageSelector } from "../../components";
-import { Perder } from "../../game/actions";
 import React from "react";
-import { saveRecord } from "../../game/record.slice";
 import { styles } from "./styles"
 import { useDispatch } from "react-redux";
 import { useState } from "react";
 
 const EndGame = ({navigation}) => {
     const dispatch = useDispatch();
-    const [name, setName] = useState("");
+    const [title, setTitle] = useState("");
     const [image, setImage] = useState("");
 
     const onHandleChange = (text) => {
-        setName(text);
+        setTitle(text);
     }
 
     const onHandleSubmit = () => {
         dispatch(Perder())
-        dispatch(saveRecord(name , image));
+        dispatch(saveRecord(title, image));
         navigation.navigate("MainMenu")
     };
 
     const onHandlerImage = (imageUri) => {
         setImage(imageUri);
-      };
+    };
       
     return (
         <ScrollView style={styles.container}>
@@ -38,7 +37,7 @@ const EndGame = ({navigation}) => {
               style={styles.input}
               placerholder="Tu nombre"
               onChangeText={onHandleChange}
-              value={name}
+              value={title}
             />
             <ImageSelector onImage={onHandlerImage}/>
             <TouchableOpacity style={styles.buttonContainer} onPress={onHandleSubmit}>

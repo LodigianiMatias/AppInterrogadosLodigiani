@@ -1,24 +1,26 @@
-import { GameRecord } from "../types";
+import { PlayerTypes } from "../types";
 
-const { INCREMENT, LOST } = GameRecord
+const { SAVE_RECORD, LOAD_PLAYERS } = PlayerTypes
+
 const initialState = {
-    numero: 0,
+    players: [],
 }
 
-const numberReducer = (state = initialState, action) => {
+const playersReducer = (state= initialState, action) => {
     switch(action.type) {
-        case INCREMENT:
+        case SAVE_RECORD:
             return {
-                numero: state.numero +1,
+                ...state,
+                players: [...state.players,{id: Date.now(), title: action.title, image: action.image}]
             }
-
-        case LOST:
+        case LOAD_PLAYERS:
             return {
-                numero: 0,
+                ...state,
+                players: action.players
             }
         default:
-            return state;
+            return state
     }
-};
+}
 
-export default numberReducer;
+export default playersReducer;
