@@ -11,7 +11,7 @@ const playersReducer = (state= initialState, action) => {
         case SAVE_RECORD:
             return {
                 ...state,
-                players: [...state.players,{id: Date.now(), title: action.title, image: action.image}]
+                players: [...state.players,{id:Date.now(), title:action.title, image:action.image}]
             }
         case LOAD_PLAYERS:
             return {

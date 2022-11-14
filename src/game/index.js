@@ -4,7 +4,7 @@ import { categoryReducer, numberReducer, playersReducer, questionReducer } from 
 import thunk from 'redux-thunk';
 
 const rootReducer = combineReducers({
-    players: playersReducer,
+    player: playersReducer,
     number: numberReducer,
     category: categoryReducer,
     questions: questionReducer,

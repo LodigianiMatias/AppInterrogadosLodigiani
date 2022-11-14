@@ -14,9 +14,6 @@ const MainMenu = ({navigation}) => {
             <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate("Categories")}>
                 <Text style={styles.buttonText}>¡Comenzar a jugar!</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate("EndGame")}>
-                <Text style={styles.buttonText}>Finalizar</Text>
-            </TouchableOpacity>
         </View>
         </ScrollView>
     )

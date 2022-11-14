@@ -15,16 +15,19 @@ export const styles = StyleSheet.create({
     alignItems: "center",
   },
   image: {
-    width: 80,
-    height: 80,
+    width: 100,
+    height: 100,
     borderRadius: 20,
-    backgroundColor: colors.primary,
   },
   info: {
+    marginHorizontal: 5,
     marginLeft: 15,
     flex: 1,
     justifyContent: "center",
     alignItems: "flex-start",
   },
-  
+  infoTitle:{
+    fontFamily: 'Bungee',
+    fontSize: 20,
+  }
 });

@@ -1,10 +1,10 @@
-import { Button, ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
+import { Alert, Button, ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { Perder, saveRecord } from "../../game/actions";
+import { useDispatch, useSelector } from "react-redux";
 
 import { ImageSelector } from "../../components";
 import React from "react";
 import { styles } from "./styles"
-import { useDispatch } from "react-redux";
 import { useState } from "react";
 
 const EndGame = ({navigation}) => {
@@ -17,9 +17,13 @@ const EndGame = ({navigation}) => {
     }
 
     const onHandleSubmit = () => {
+        if(title == '' || image == '') {
+            return;
+        } else {
         dispatch(Perder())
         dispatch(saveRecord(title, image));
         navigation.navigate("MainMenu")
+    }
     };
 
     const onHandlerImage = (imageUri) => {

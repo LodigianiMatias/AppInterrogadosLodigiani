@@ -8,7 +8,7 @@ import { styles } from "./styles";
 
 const Credits = () => {
   const dispatch = useDispatch();
-  const players = useSelector((state) => state.players.players)
+  const players = useSelector((state) => state.player.players)
 
   useEffect(() => {
     dispatch(LoadPlayer());
